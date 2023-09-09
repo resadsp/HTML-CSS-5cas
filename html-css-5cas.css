@@ -1,0 +1,58 @@
+table, tr, th, td{
+    border: 1px solid blue;
+    border-collapse: collapse; /*sjedinjuje okvir u jednu liniju, nema razmaka izmedju linija*/
+    color: red;
+    
+}
+
+.tabela table{
+  border-radius: 10px; /*zaobljenje okvira tabele za datu vrednost*/
+  width: 100%;
+  text-align: center;
+  
+}
+
+.tabela th{
+    border: 3px solid black;
+    color: black;
+    border-style: dotted; /*stil linije oko th*/
+    
+   
+
+}
+.tabela td{
+    border: 3px solid blue;
+    color: dimgray;
+    border-style: double;  /*stil linije oko td*/
+}
+
+.velicina table{
+    width: 100%;
+}
+
+caption{
+    color: black;
+    font-size: 20px;
+}
+
+.pading th,
+.pading td,
+.pading caption{
+        padding: 15px;
+        color: green;
+}
+
+
+
+.klasa tr{
+    border-bottom: 1px solid #ddd;
+  }
+
+.klasa tr:nth-child(even) {  /*farba svaki drugi red. td farba svaku drugu kolonu. even farba drugu i posle svake druge dve, 
+    tj farba parne redove */
+    background-color: #D6EEEE;
+  }
+
+  .klasa td:nth-child(odd) {  /*farba svaku drugu kolonu. odd znaci da farba prvu i svake druge dve, tj farba neparne kolone*/
+    background-color: #D6EEEE;
+  }

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="html-css-5cas.css">
+    <title>HTML CSS 5. CAS</title>
+</head>
+<body>
+    <!-- tabele -->
+<table> <!-- tabela se definise sa ljucnom recju table -->
+    <tr> <!-- tr definise red -->
+        <td>Email</td> <!-- td definise kolopnu u redu -->
+        <td>Ime</td>
+        <td>Prezime</td>
+    </tr>
+    <tr>
+        <td>resadspahovic94@gmail.com</td>
+        <td>Resad</td>
+        <td>Spahovic</td>
+    </tr>
+</table><br><br>
+<table> <!-- pravimo novu tabelu -->
+    <tr><!-- novi red u tabeli -->
+        <th>Ime</th> <!-- definise prvi red, kao pocetni red naslova tabele -->
+        <th>Prezime</th>
+        <th>Datum rodjenja</th>
+    </tr> 
+    <tr>
+        <td>Resad</td> <!-- sada nastavljamo sa normalnim redom tj. kolonom u redu -->
+        <td>Spahovic</td>
+        <td>17.01.1994</td>
+    </tr>
+    <tr>
+        <td>Maida</td>
+        <td>Baltic</td>
+        <td>07.02.1993</td>
+    </tr>
+</table><br><br>
+<table>
+    <colgroup> <!-- sjedinjacvanje redova i kolona -->
+        <col span="2" style="background-color: bisque;">
+        <col span="2" style="background-color: pink">
+      </colgroup
+    <tr>
+        <th>ime</th>
+        <th>prezime</th>
+        <th>datum rodjena</th>
+    </tr>
+    <tr>
+        <td>Atija</td>
+        <td>Spahovic</td>
+        <td>07.02.2022</td>
+    </tr>
+</table>
+<br><br>
+<div class="tabela">
+    <table>
+        <tr>
+            <th>firma</th>
+            <th>sediste</th>
+            <th>postanski broj</th>
+        </tr>
+        <tr><td>balta</td>
+        <td>Novi Pazar</td>
+        <td>36300</td>
+    </tr>
+    <tr>
+        <td>Home carpets</td>
+        <td>Novi Pazar</td>
+        <td>36300</td>
+    </tr>
+    </table><br><br></div>
+    <!-- sizes -->
+<div class="velicina">
+    <table>
+        <tr>
+            <th style="width: 70%; height: 35px;">firma</th>
+            <th>sediste</th>
+            <th>postanski broj</th>
+        </tr>
+        <tr>
+        <td style="height: 200px;">balta</td>
+        <td>Novi Pazar</td>
+        <td>36300</td>
+    </tr>
+    <tr>
+        <td style="height: 39px;">Home carpets</td>
+        <td>Novi Pazar A</td>
+        <td>36300 A</td>
+    </tr>
+    </table>
+</div><br><br>
+<div class="pading">
+<table><!-- th, to jest naslovi kolona sa leve strane umesto na vrhu. postoji mogucnost stavljanja naslova sa desne strane kao i sa leve.
+kako je moguce stavljati naslove na vrhu, tako je moguce stavljati i naslove na dnu tabele ali se to retko koristi jer nije funkcionalno. -->
+<caption>Porodica Spahovic</caption> <!-- naslov tabele -->   
+<tr>
+        <th>Ime:</th>
+        <td>Resad</td>
+        <td>Maida</td>
+        <td>Atija</td>
+    </tr>
+    <tr>
+        <th>Prezime:</th>
+        <td colspan="3" style="text-align: center;">Spahovic</td> <!-- sjedinjuje kolone, unosimo broj kolona koje zelimo da sjedinimo -->
+        
+    </tr>
+    <tr>
+        <th>Adresa:</th>
+        <td colspan="3" style="text-align: center;">Cerkez mahala bb</td>
+     
+    </tr>
+    <tr>
+        <th rowspan="2">Kontakt telefon:</th> <!-- sjedinjuje redove, unosimo broj redova koje zelimo da sjedinimo -->
+        <td>062266996</td>
+        <td>0631236005</td>
+        <td rowspan="2">061234567</td>
+    </tr>
+    <tr>
+     
+        <td>062266996</td>
+        <td>0631236005</td>
+       
+    </tr>
+</table></div>
+<br><br>
+<div class="klasa">
+<table>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+    <th>Savings</th>
+    </tr>
+    <tr>
+      <td colspan="3">Peter</td>
+      
+    </tr>
+    <tr>
+      <td rowspan="3">Lois</td>
+      <td>Griffin</td>
+      <td>$150</td>
+    </tr>
+    <tr>
+      <td>Swanson</td>
+      <td>$300</td>
+    </tr>
+    <tr>
+      <td>Brown</td>
+      <td>$250</td>
+    </tr>
+  </table></div>
+
+  
+</body>
+</html>
